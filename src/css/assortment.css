@@ -1,0 +1,146 @@
+.assortment {
+  background-color: #ebf8ed;
+  padding: 32px 0;
+}
+
+.title-assortment {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 32px;
+}
+
+.assortment-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.assortment-img {
+  width: 100%;
+  height: auto;
+  border-radius: 32px;
+   margin-bottom: 16px;
+}
+
+.assortment-card {
+  margin-bottom: 16px;
+}
+
+.assortment-name {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 160%;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 8px;
+ 
+}
+
+.assortment-discription {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+  color: #030a06;
+}
+
+.assortment-price {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 160%;
+  text-align: center;
+  color: #030a06;
+
+}
+
+.assortment-button {
+  border: 1px solid #030a06;
+  background-color: transparent;
+  border-radius: 6px;
+  padding: 8px 20px;
+  width: 100%;
+  height: 40px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #030a06;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+
+
+.assortment-button:active {
+  border: none;
+  background-color: #113916;
+  opacity: 0.5;
+  color: #fff;
+}
+
+.assortment-button:disabled {
+  background: #030a06;
+  opacity: 0.2;
+}
+
+@media screen and (min-width: 768px) {
+  .assortment {
+    padding: 64px 0;
+  }
+
+  .assortment-menu {
+    align-items: stretch;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .assortment-item {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+
+  .assortment-card {
+    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .assortment {
+   padding: 64px 0;
+  }
+
+  .title-assortment {
+    font-size: 36px;
+  }
+
+  .assortment-menu {
+    row-gap: 64px;
+  }
+
+  .assortment-item {
+    flex: 0 0 calc((100% - 72px) / 4);
+  }
+
+  .assortment-button:hover, 
+.assortment-button:focus {
+  background-color: #030a06;
+  opacity: 0.5;
+  color: #fff;
+  transition: background-color 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
+}
